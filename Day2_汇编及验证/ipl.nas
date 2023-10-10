@@ -55,6 +55,6 @@ msg:
 		DB		0x0a			; 换行
 		DB		0
 
-		RESB	0x7dfe-$		; 填写0x00直到0x001fe $是一个变量，表示当前地址因为ORG
+		RESB	0x7dfe-$		; 填写0x00直到0x001fe $是一个变量，表示开始地址因为ORG
 							; RESB填多少字节0,用16进制打开是0x1fe，但实际开始位置为0x7c00所以要加上及0x7dfe
 		DB		0x55, 0xaa
